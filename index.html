@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn's Portfolio</title>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Style CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Owl Carousel Theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section id="navbar" class="d-flex justify-content-between p-3">
+        <div class="brandName pt-1">
+            <h4>SMD</h4>
+        </div>
+        <div class="menu pt-1">
+            <ul class="d-flex gap-4">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacts</a>
+                </li>
+                <!-- <li>
+                    <a href="#UpcomingProjects">Upcoming</a>
+                </li> -->
+            </ul>
+        </div>
+        <div class="quickAccess">
+            <button class="btn text-white bg-black rounded-0">
+                Resume
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-2" viewBox="0 0 16 16">
+                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                </svg>
+            </button>
+            <button class="btn text-white bg-black rounded-0">
+                Say Hi
+                <i class="fa-solid fa-hand ms-2"></i>
+                <!-- <i class="bi bi-hand-thumbs-up"></i> -->
+            </button>
+        </div>
+    </section>
+    <section id="home" class="">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <h1 class="name">SHAWN MATHEW DANIEL</h1>
+                    <small>Junior Frontend Developer | Based in Abu Dhabi, UAE</small>
+                </div>
+                <div class="col-6 text-end">
+                    <picture>
+                        <img src="/images/Shawn Pics/PortfolioPic2.jpeg" class="portfolioPicture img-fluid" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="h-100">
+        <div class="container-fluid">
+            <h2 class="about">ABOUT</h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="verticalLine">
+                        <div class="bulletPoints">
+                            <!-- <p class="lists">Me</p> -->
+                            <span class="lists" data-section="aboutMe">
+                                me
+                            </span>
+                        </div>
+                        <div class="bulletPoints">
+                            <!-- <p class=" lists">Education</p> -->
+                            <span class="lists" data-section="education">
+                                education
+                            </span>
+                        </div>
+                        <div class="bulletPoints">
+                            <!-- <p class="lists">Skills</p> -->
+                            <span class="lists" data-section="skills">
+                                skills
+                            </span>
+                        </div>
+                        <div class="bulletPoints">
+                            <!-- <p class="lists">Experience</p> -->
+                            <span class="lists" data-section="experience">
+                                experience
+                            </span>
+                        </div>
+                        <div class="bulletPoints">
+                            <!-- <p class="lists">Hobbies</p> -->
+                            <span class="lists" data-section="hobbies">
+                                hobbies
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 p-4 mt-4">
+                    <div class="aboutContent" id="aboutMe">
+                        <h3>About Me</h3>
+                        <hr class="mt-2">
+                        <p class="mt-2">A Computer Science and Application graduate with six months of hands-on experience as a Software Developer Trainee.
+                            I'm naturally curious and enjoy understanding the reasoning behind how things work. I believe in asking questions, exploring different perspectives, and learning beyond the surface.
+                        </p>
+                        <p class="mt-2">Recently, I've developed a strong interest in Machine Learning, particularly how algorithms can identify patterns in historical data and use them to make predictions about future outcomes.</p>
+                        <p class="mt-2">Currently developing a project called <a class="upcomingPrj px-2" data-bs-toggle="tooltip" data-bs-title="Click to view live updates of my project" href="www.google.com"><span class="light m-0">home</span><strong class="strong">services</strong>.</a></p>
+                        <span>
+                            <p class="mt-2">
+                                Tech Books on my Bucket List:
+                            </p>
+                            <ol>
+                                <li class="text-decoration-line-through">Machine Learning Using Python</li>
+                                <li>Clean Code by Robert C. Martin</li>
+                                <li>Software Engineering at Google Curated by Titus Winters,
+                                    Tom Manshreck & Hyrum Wright
+                                </li>
+                                <li>
+                                    Logic : A Complete Introduction by Dr. Siu-Fan Lee
+                                </li>
+                            </ol>
+                        </span>
+                    </div>
+
+                    <div class="aboutContent d-none" id="education">
+                        <h3>My Education</h3>
+                        <hr class="mt-2">
+                        <ol>
+                            <li class="college">
+                                <p>BSc. Computer Science and Application  [ 7.9 / 10 CGPA ]</p>
+                                <small>Sri Krishna Arts and Science College</small> <br>
+                                <small>2023 - 2026</small>
+                            </li>
+                            <li class="schooling2 mt-3">
+                                <p>7th - 12th Grade </p>
+                                <small>Stanes School CBSE</small><br>
+                                <small>2017 - 2023</small>
+                            </li>
+                            <li class="schooling1 mt-3">
+                                <p>2nd - 6th Grade </p>
+                                <small>Emirates Future International Academy</small><br>
+                                <small>2012 - 2017</small>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="aboutContent d-none" id="skills">
+                        <h3>Skills</h3>
+                        <hr class="mt-2">
+                        <div class="skillsCont d-flex  flex-wrap gap-4">
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/html5.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>HTML5</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/css.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>CSS5</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/javascript.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>JS</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/bootstrap.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>Bootstrap</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/jquery.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>JQuery</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/json.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>JSON</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/cplusplus.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>C++</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/python.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>Python</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/gsap.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>Gsap</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/git.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>Git</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/github.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>GitHub</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/jira.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>Jira</p>
+                            </div>
+                            <div class="skills text-center">
+                                <picture>
+                                    <img src="/images/Icons/mongodb.svg" class="skillsIcons" alt="">
+                                </picture>
+                                <p>MongoDB</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="aboutContent d-none" id="experience">
+                        <h3>My Experience</h3>
+                        <hr class="mt-2">
+                        <div class="expOne">
+                            <h5>Software Developer Trainee </h5>
+                            <small>CG-VAK Software & Exports Ltd.</small> <br>
+                            <small>March 2026 - August 2026  [ 6 Months ]</small>
+                            <p>Skills Learnt:</p>
+                            <ul class="skillsGained d-flex flex-wrap gap-1 ps-0">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScipt</li>
+                                <li>Bootstrap</li>
+                                <li>JQuery</li>
+                                <li>JSON</li>
+                                <li>C++</li>
+                                <li>MS SQL</li>
+                                <li>MongoDB</li>
+                                <li>Git</li>
+                                <li>Github</li>
+                                <li>GSAP</li>
+                            </ul>
+                        </div>
+                        <div class="expTwo mt-3">
+                            <h5>Software Developer Intern </h5>
+                            <small>Madhavaa Crafts Pvt. Ltd.</small> <br>
+                            <small>April 2025 - May 2025  [ 1 Month ]</small>
+                            <p>Skills Learnt:</p>
+                            <ul class="skillsGained d-flex flex-wrap gap-1 ps-0">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScipt</li>
+                                <li>React</li>
+                                <li>TypeScript</li>
+                                <li>SupaBase</li>
+                                <li>Lovable AI</li>
+                                <li>PHP</li>
+                                <li>Github</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="aboutContent d-none" id="hobbies">
+                        <h3>My Hobbies</h3>
+                        <hr class="mt-2">
+                        <strong>Apart from tech, I enjoy pursuing creative ideas and discovering new ways to express myself.</strong><br>
+                        <small class="mt-2">Some of my interests include <strong class="football">football</strong>, <strong class="chess">chess</strong>, <strong class="music">music</strong> and <strong class="game">gaming</strong>. <br> </small>
+                        <small>Music has always been a part of that journey. I don't see it as just a tune; I see it as a language of its own. The saxophone has a special place in my playlist, while my taste ranges from the nostalgic sounds of the '80s and retro music to the energy of EDM.</small><br>
+                        <small class="mt-2">When it comes to gaming, Dead Cells is one of my favourites. Its challenging gameplay and mysterious storyline keep me hooked. I find the idea of a protagonist who keeps coming back, no matter how many times he falls, particularly intriguing. The deeper lore surrounding the Beheaded, the King and the Collector makes the experience even more fascinating.</small><br>
+                        <small class="mt-2">And when none of those seem appealing, I usually sit back with a good book. Fiction, especially, has a way of capturing my attention.</small><br>
+                        <small class="mt-2">One of my favourite reads so far is Dan Brown's Angels & Demons. It made me appreciate how knowledge of history, symbols and seemingly unrelated subjects can become incredibly useful when the situation calls for it. Robert Langdon certainly makes a compelling case for never underestimating what you learn!</small><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="h-100">
+        <div class="container-fluid">
+            <h2 class="projects">PROJECTS</h2>
+            <div class="container d-flex justify-content-center gap-5">
+                <div class="imageCont ">
+                    <picture class="projectImg" id="sonicKeys">
+                        <img src="/images/projects/SonicKeys.png" alt="">
+                    </picture>
+                    <picture class="projectImg d-none" id="foodOnWheels">
+                        <img src="/images/projects/Screenshot 2026-11-06 024427.png" alt="">
+                    </picture>
+                    <picture class="projectImg d-none" id="hospitalAppointmentSystem">
+                        <img src="/images/projects/Screenshot 2026-11-06 024537.png" alt="">
+                    </picture>
+                    <picture class="projectImg d-none" id="geeksForGeeks">
+                        <img src="/images/projects/Screenshot 2026-11-06 024938.png" alt="">
+                    </picture>
+                    <picture class="projectImg d-none" id="vedaanta">
+                        <img src="/images/projects/Screenshot 2026-11-06 025059.png" alt="">
+                    </picture>
+                    <picture class="projectImg d-none" id="hmtWatches">
+                        <img src="/images/projects/Screenshot 2026-11-06 025331.png" alt="">
+                    </picture>
+                    <picture class="projectImg d-none" id="homeServices">
+                        <img src="/images/projects/Screenshot 2026-11-06 025708.png" alt="">
+                    </picture>
+                </div>
+                <div class="projectTitles d-flex flex-column gap-3">
+                    <span class="projectLists active" data-section="sonicKeys">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>01</p>
+                            <p>sonic keys</p>
+                        </div>
+                    </span>
+                    <span class="projectLists" data-section="foodOnWheels">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>02</p>
+                            <p>
+                                food on wheels
+                            </p>
+                        </div>
+                    </span>
+                    <span class="projectLists" data-section="hospitalAppointmentSystem">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>03</p>
+                            <p>
+                                hospital appointment system
+                            </p>
+                        </div>
+                    </span>
+                    <span class="projectLists" data-section="geeksForGeeks">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>04</p>
+                            <p>
+                                geeks for geeks
+                            </p>    
+                        </div>
+                    </span>
+                    <span class="projectLists" data-section="vedaanta">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>05</p>
+                            <p>
+                                vedaanta
+                            </p>
+                        </div>
+                    </span>
+                    <span class="projectLists" data-section="hmtWatches">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>06</p>
+                            <p>
+                                hmt watches
+                            </p>
+                        </div>
+                    </span>
+                    <span class="projectLists" data-section="homeServices">
+                        <div class="prjDesc d-flex gap-3">
+                            <p>07</p>
+                            <p>
+                                home services
+                            </p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="contact" class="h-100">
+        <div class="container-fluid ">
+            <h2 class="contact">CONTACT</h2>
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="contactCont d-flex flex-column gap-5">
+                    <div class="email mt-5">
+                        <small>email id:</small>
+                        <p class="fw-bold">
+                            <a href="mailto:shawn.daniel1919@gmail.com">shawn.daniel1919@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="phone">
+                        <small>phone:</small>
+                        <p class="fw-bold">
+                            <a href="tel:+971508051284">+971-508051284</a>
+                        </p>
+                    </div>
+                    <div class="address">
+                        <small>address:</small>
+                        <p class="fw-bold">Abu Dhabi | UAE</p>
+                    </div>
+                    <div class="socials">
+                        <small>socials:</small>
+                        <span class="socialsLinks d-flex gap-3 pt-2">
+                            <a href="https://www.instagram.com/shawnmat19/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram socialIcon" viewBox="0 0 16 16">
+                                    <!-- Keep your existing SVG path here -->
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </a>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram socialIcon" viewBox="0 0 16 16">
+                            </svg> -->
+                            <a href="https://www.linkedin.com/in/shawn-mathew-daniel/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin socialIcon" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ShawnMat" target="_blank" rel="noopener noreferrer" aria-label="Github" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github socialIcon" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contactForms">
+                    <picture class="contactCard">
+                        <img src="/images/Focused Workday_ Laptop and Monitor.png" class="img-fluid" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <h1>THANKS FOR SCROLLING.</h1>
+            <span class="d-flex flex-column gap-3">
+                <p>You've reached the end. Want to know more? Let's chat!</p>
+                <button class="px-3 btn rounded-0 getInTouchBtn">
+                    Get in Touch
+                </button>
+            </span>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.14.2/gsap.min.js"></script>
+    
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Custom Script -->
+    <script src="scripts/script.js"></script>
+    <script src="animations/animation.js"></script>
+</body>
+</html>
