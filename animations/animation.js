@@ -20,11 +20,11 @@ function setup() {
 function draw() {
     clear();
 
-    translate(width / 2, height);
+    translate(width / 2, height / 1.5);
 
     let sway = sin(millis() * 0.001) * 0.15;
 
-    drawTree(130, 0, sway, 0);
+    drawTree(100, 0, sway, 0);
 }
 
 function drawTree(len, angle, sway, depth) {
