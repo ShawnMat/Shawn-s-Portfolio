@@ -47,12 +47,16 @@ h1,h2,h3,h4,h5,h6{
 .menu{
     margin-left: 100px;
 }
+.menuList:hover{
+    cursor: pointer;
+}
 #home{
     /* width: fit-content; */
     /* width: 100%; */
-    height: calc(100dvh - 10.5dvh);
+    height: 100%;
+    /* height: calc(100dvh - 10.5dvh); */
     /* height: 100%; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .name{
@@ -313,4 +317,15 @@ footer{
 .contactCard{
     display: block;
     width: 500px;
+}
+
+
+@media(max-width:768px){
+    .name{
+        padding-top: 0%;
+    }
+    .portfolioPicture{
+        width: 300px;
+        /* border-radius: 50% ; */
+    }
 }
