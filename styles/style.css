@@ -58,7 +58,27 @@ h1,h2,h3,h4,h5,h6{
     /* height: 100%; */
     /* overflow-y: hidden; */
 }
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
 
+#mobileCanvas {
+    display: none;
+    
+}
+
+
+#mobileCanvas canvas {
+    display: block;
+    pointer-events: none;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
 .name{
     font-size: 60px;
     padding-top: 25%;
@@ -77,8 +97,9 @@ h1,h2,h3,h4,h5,h6{
 .verticalLine{
     position: relative;
     height: 400px;
-    width: 0px;
-    border-left: 1px solid black;
+    width: 100%;
+    /* border-left: 1px solid black; */
+    border-top: 1px solid black;
     margin-left: 20%;
     margin-top: 10%;
 }
@@ -331,4 +352,26 @@ footer{
     .myPic{
         display: none;
     }
+}
+@media (max-width: 768px) {
+    #mobileCanvas {
+        display: block;
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+
+    .myPic {
+        display: none;
+    }
+}
+
+.hero .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+#mobileCanvas canvas {
+    display: block;
+    pointer-events: none;
 }
