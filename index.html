@@ -24,9 +24,58 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="menuOptions bg-black text-white p-4">
+        <p>close</p>
+        <div class="container d-flex  flex-column mt-5 gap-5 ">
+            <span class="d-flex  justify-content-between">
+                <span class="d-flex gap-3">
+                    <p>01</p>
+                    <p>about</p>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+            </span>
+            <hr>
+            <span class="d-flex justify-content-between">
+                <span class="d-flex gap-3">
+                    <p>02</p>
+                    <p>projects</p>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+            </span>
+            <hr>
+            <span class="d-flex  justify-content-between">
+                <span class="d-flex gap-3">
+                    <p>03</p>
+                    <p>contacts</p>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/>
+                </svg>
+            </span>
+            <hr>
+            <div class="text-center">
+                <button class="btn text-black bg-white rounded-0">
+                    Resume
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download ms-2" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                    </svg>
+                </button>
+                <button class="btn text-black bg-white rounded-0">
+                    Say Hi
+                    <i class="fa-solid fa-hand ms-2"></i>
+                </button>
+            </div>
+        </div>
+        
+    </div>
     <section id="navbar" class="d-flex justify-content-between align-items-center p-3">
         <h4 class="brandName pt-1">SMD</h4>
-        <p class="menuList d-flex d-md-none">menu</p>
+        <p class="menuList d-flex d-md-none fw-bold">menu</p>
         <div class="menu d-none d-md-flex pt-1">
             <ul class="d-flex gap-4">
                 <li>
@@ -38,9 +87,7 @@
                 <li>
                     <a href="#contact">Contacts</a>
                 </li>
-                <!-- <li>
-                    <a href="#UpcomingProjects">Upcoming</a>
-                </li> -->
+                
             </ul>
         </div>
         <div class="quickAccess d-none d-md-flex gap-3">
@@ -62,10 +109,6 @@
         <div id="mobileCanvas"></div>
         <div class="container-fluid ">
             <div class="row">
-                <!-- <div class="col-md-6 text-start">
-                    <h1 class="name">SHAWN MATHEW DANIEL</h1>
-                    <small>Junior Frontend Developer | Based in Abu Dhabi, UAE</small>
-                </div> -->
                 <div class="col-md-6 text-end myPic">
                     <picture>
                         <img src="/images/Shawn Pics/PortfolioPic2.jpeg" class="portfolioPicture img-fluid" alt="">
@@ -82,7 +125,7 @@
         <div class="container-fluid">
             <h2 class="about">ABOUT</h2>
             <div class="row">
-                <div class="col-10">
+                <div class="col-4 d-none d-md-flex aboutOptions">
                     <div class="verticalLine">
                         <div class="bulletPoints">
                             <span class="lists" data-section="aboutMe">
@@ -111,9 +154,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-7 p-4 mt-4">
+                <div class="col-md-7 col-lg-12 p-4 mt-4">
                     <div class="aboutContent" id="aboutMe">
-                        <h3>About Me</h3>
+                        <h3>about me</h3>
                         <hr class="mt-2">
                         <p class="mt-2">A Computer Science and Application graduate with six months of hands-on experience as a Software Developer Trainee.
                             I'm naturally curious and enjoy understanding the reasoning behind how things work. I believe in asking questions, exploring different perspectives, and learning beyond the surface.
@@ -137,8 +180,8 @@
                         </span>
                     </div>
 
-                    <div class="aboutContent d-none" id="education">
-                        <h3>My Education</h3>
+                    <div class="aboutContent d-block " id="education">
+                        <h3>my education</h3>
                         <hr class="mt-2">
                         <ol>
                             <li class="college">
@@ -158,10 +201,10 @@
                             </li>
                         </ol>
                     </div>
-                    <div class="aboutContent d-none" id="skills">
-                        <h3>Skills</h3>
+                    <div class="aboutContent d-block" id="skills">
+                        <h3>skills</h3>
                         <hr class="mt-2">
-                        <div class="skillsCont d-flex  flex-wrap gap-4">
+                        <div class="skillsCont d-flex  flex-wrap gap-4 mt-4">
                             <div class="skills text-center">
                                 <picture>
                                     <img src="/images/Icons/html5.svg" class="skillsIcons" alt="">
@@ -243,10 +286,10 @@
                             
                         </div>
                     </div>
-                    <div class="aboutContent d-none" id="experience">
+                    <div class="aboutContent d-block " id="experience">
                         <h3>My Experience</h3>
                         <hr class="mt-2">
-                        <div class="expOne">
+                        <div class="expOne mt-3">
                             <h5>Software Developer Trainee </h5>
                             <small>CG-VAK Software & Exports Ltd.</small> <br>
                             <small>March 2026 - August 2026  [ 6 Months ]</small>
@@ -286,7 +329,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="aboutContent d-none" id="hobbies">
+                    <div class="aboutContent" id="hobbies">
                         <h3>My Hobbies</h3>
                         <hr class="mt-2">
                         <strong>Apart from tech, I enjoy pursuing creative ideas and discovering new ways to express myself.</strong><br>

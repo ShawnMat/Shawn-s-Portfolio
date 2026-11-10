@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+hr{
+    margin: 0px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -50,13 +54,12 @@ h1,h2,h3,h4,h5,h6{
 .menuList:hover{
     cursor: pointer;
 }
-#home{
-    /* width: fit-content; */
-    /* width: 100%; */
+
+.menuOptions {
     height: 100%;
-    /* height: calc(100dvh - 10.5dvh); */
-    /* height: 100%; */
-    /* overflow-y: hidden; */
+}
+#home{
+    height: 100%;
 }
 .hero {
     position: relative;
@@ -65,8 +68,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #mobileCanvas {
-    display: none;
-    
+    display: none;   
 }
 
 
@@ -82,8 +84,7 @@ h1,h2,h3,h4,h5,h6{
 .name{
     font-size: 60px;
     padding-top: 25%;
-    /* line-height: 20px; */
-    /* letter-spacing: 5px; */
+
 }
 .portfolioPicture{
     width: 600px;
@@ -98,8 +99,8 @@ h1,h2,h3,h4,h5,h6{
     position: relative;
     height: 400px;
     width: 100%;
-    /* border-left: 1px solid black; */
-    border-top: 1px solid black;
+    border-left: 1px solid black;
+    /* border-top: 1px solid black; */
     margin-left: 20%;
     margin-top: 10%;
 }
@@ -340,6 +341,22 @@ footer{
     width: 500px;
 }
 
+.aboutContent:nth-child(2){
+    display: none;
+}
+.aboutContent:nth-child(3){
+    display: none;
+}
+.aboutContent:nth-child(4){
+    display: none;
+}
+.aboutContent:nth-child(4){
+    display: none;
+}
+.aboutContent:nth-child(5){
+    display: none;
+}
+
 
 @media(max-width:768px){
     .name{
@@ -351,6 +368,21 @@ footer{
     }
     .myPic{
         display: none;
+    }
+    /* .aboutOptions{
+        display: none;
+    } */
+    .aboutContent:nth-child(2){
+        display: flex;
+    }
+    .aboutContent:nth-child(3){
+        display: flex;
+    }
+    .aboutContent:nth-child(4){
+        display: flex;
+    }
+    .aboutContent:nth-child(4){
+        display: flex;
     }
 }
 @media (max-width: 768px) {
