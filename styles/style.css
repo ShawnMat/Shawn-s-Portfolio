@@ -199,14 +199,17 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .skills{
-    width: 50px;  
-    margin-inline: 50px;  
+    width: 30px;  
+    margin-inline: 20px;  
 }
 /* .skills:hover{
     cursor: pointer;
 } */
 .skillsIcons{
-    height: 30px;
+    /* height: 30px; */
+    /* font-size: clamp(20px, 4vw, 30px); */
+    /* font-size: calc(16px + 2vw); */
+    /* font-size: clamp(10px, calc(12px + 2vw), 20px); */
 }
 
 .football{
