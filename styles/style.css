@@ -68,14 +68,14 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #mobileCanvas {
-    display: none;   
+    display: none;
 }
-
 
 #mobileCanvas canvas {
     display: block;
     pointer-events: none;
 }
+
 
 .heroContent {
     position: relative;
@@ -341,7 +341,7 @@ footer{
     width: 500px;
 }
 
-.aboutContent:nth-child(2){
+/* .aboutContent:nth-child(2){
     display: none;
 }
 .aboutContent:nth-child(3){
@@ -355,8 +355,10 @@ footer{
 }
 .aboutContent:nth-child(5){
     display: none;
+} */
+.aboutContent:not(#aboutMe) {
+    display: none;
 }
-
 
 @media(max-width:768px){
     .name{
@@ -372,7 +374,7 @@ footer{
     /* .aboutOptions{
         display: none;
     } */
-    .aboutContent:nth-child(2){
+    /* .aboutContent:nth-child(2){
         display: flex;
     }
     .aboutContent:nth-child(3){
@@ -381,23 +383,33 @@ footer{
     .aboutContent:nth-child(4){
         display: flex;
     }
-    .aboutContent:nth-child(4){
+    .aboutContent:nth-child(5){
         display: flex;
-    }
+    } */
 }
 @media (max-width: 768px) {
-    #mobileCanvas {
+    /* #mobileCanvas {
         display: block;
         position: absolute;
         inset: 0;
         z-index: 0;
-    }
+    } */
 
     .myPic {
         display: none;
     }
 }
 
+@media (max-width: 768px) {
+    #mobileCanvas {
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+}
 .hero .container-fluid {
     position: relative;
     z-index: 1;

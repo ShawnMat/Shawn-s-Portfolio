@@ -1,34 +1,28 @@
-
 let maxDepth = 9;
 
 function setup() {
     let container = document.querySelector("#mobileCanvas");
 
     let canvas = createCanvas(
-        container.offsetWidth || windowWidth,
-        container.offsetHeight || windowHeight
+        container.offsetWidth,
+        container.offsetHeight
     );
 
     canvas.parent("mobileCanvas");
     angleMode(RADIANS);
-
-    if (window.innerWidth > 768) {
-        noLoop();
-    }
 }
 
 function draw() {
     clear();
 
-    translate(width / 2, height / 1.5);
+    translate(width / 2, height * 0.65);
 
     let sway = sin(millis() * 0.001) * 0.15;
 
-    drawTree(100, 0, sway, 0);
+    drawTree(80, 0, sway, 0);
 }
 
 function drawTree(len, angle, sway, depth) {
-
     if (depth > maxDepth || len < 4) return;
 
     let thickness = map(depth, 0, maxDepth, 12, 1);
@@ -64,8 +58,5 @@ function windowResized() {
 
     if (window.innerWidth <= 768) {
         resizeCanvas(container.offsetWidth, container.offsetHeight);
-        loop();
-    } else {
-        noLoop();
     }
 }

@@ -4,15 +4,16 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl =>
     new bootstrap.Tooltip(tooltipTriggerEl)
 );
 
-const lists = document.querySelectorAll(".lists")
-const aboutContent = document.querySelectorAll(".aboutContent")
-lists.forEach(listItem=>{
-    listItem.addEventListener("click",()=>{
+const lists = document.querySelectorAll(".lists");
+const aboutContent = document.querySelectorAll(".aboutContent");
+
+lists.forEach(listItem => {
+    listItem.addEventListener("click", () => {
         const target = listItem.dataset.section;
 
-        aboutContent.forEach(content =>{
+        aboutContent.forEach(content => {
             content.classList.add("d-none");
-        })
+        });
 
         lists.forEach(item => {
             item.classList.remove("active");
@@ -21,11 +22,10 @@ lists.forEach(listItem=>{
 
         document.getElementById(target).classList.remove("d-none");
 
-        // Highlight the selected option
         listItem.classList.add("active");
         listItem.parentElement.classList.add("active");
-    })
-})
+    });
+});
 
 // Projects
 const projectLists = document.querySelectorAll(".projectLists")
