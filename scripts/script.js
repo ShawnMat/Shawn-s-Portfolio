@@ -54,4 +54,12 @@ projectLists.forEach(listItem=>{
 
 })
 
+// const visitProjectBtn = document.querySelectorAll(".visitPrjBtn")
+// const projectDesc = document.querySelectorAll(".prjDesc");
 
+// projectDesc.forEach(prjConts=>{
+//     prjConts.addEventListener("mouseover",()=>{
+//         visitProjectBtn.add.classList(onhoverBtn)
+//     })
+
+// })

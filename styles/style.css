@@ -295,6 +295,15 @@ h1,h2,h3,h4,h5,h6{
 .projectTitles{
     margin-top: 8%;
 }
+.visitPrjBtn{
+    display: none;
+}
+
+/* .onhoverBtn{
+    background-color: white;
+    color: black;
+} */
+
 .prjDesc{
     width: fit-content;
     padding-inline: 5px;
@@ -309,12 +318,19 @@ h1,h2,h3,h4,h5,h6{
 }
 .prjDesc:hover{
     /* font-size: 25px; */
+    padding: 3px;
     background-color: black;
     color: white;
     cursor: pointer;
     font-weight: bolder;
-
 }
+.prjDesc:hover .visitPrjBtn{
+    display: flex;
+    background-color: white;
+    color: black;
+}
+
+
 
 .contact{
     margin-top: 5%;
