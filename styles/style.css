@@ -296,7 +296,7 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 8%;
 }
 .visitPrjBtn{
-    display: none;
+    /* display: none; */
 }
 
 /* .onhoverBtn{
@@ -316,6 +316,15 @@ h1,h2,h3,h4,h5,h6{
     font-size: 20px;
     /* font-weight: bolder; */
 }
+/* #currentWorkingPrj{
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(to top, #30cfd0 0%, #330867 100%) border-box;
+
+} */
+
 .prjDesc:hover{
     /* font-size: 25px; */
     padding: 3px;
@@ -323,6 +332,7 @@ h1,h2,h3,h4,h5,h6{
     color: white;
     cursor: pointer;
     font-weight: bolder;
+    /* z-index: 1000; */
 }
 .prjDesc:hover .visitPrjBtn{
     display: flex;

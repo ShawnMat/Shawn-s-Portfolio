@@ -54,12 +54,44 @@ projectLists.forEach(listItem=>{
 
 })
 
-// const visitProjectBtn = document.querySelectorAll(".visitPrjBtn")
-// const projectDesc = document.querySelectorAll(".prjDesc");
 
-// projectDesc.forEach(prjConts=>{
-//     prjConts.addEventListener("mouseover",()=>{
-//         visitProjectBtn.add.classList(onhoverBtn)
-//     })
+const resumeBtn = document.querySelector("#resumeBtn")
+resumeBtn.addEventListener("click",()=>{
+    window.open("documents/Shawn Mathew Daniel Resume.pdf","_blank" )
+})
+const sayHiBtn = document.querySelector("#sayHiBtn");
 
-// })
+sayHiBtn.addEventListener("click", () => {
+    window.location.href = "mailto:your-email@example.com";
+});
+
+
+const sonicKeysWebsite = document.querySelector("#sonicKeysWebsite");
+const foodOnWheelsWebsite = document.querySelector("#foodOnWheelsWebsite");
+const hospitalAppointmentSystemWebsite = document.querySelector("#hospitalAppointmentSystemWebsite")
+const geeksForGeeksWebsite = document.querySelector("#geeksForGeeksWebsite")
+const vedaantaWebsite = document.querySelector("#vedaantaWebsite");
+const hmtWatchesWebsite = document.querySelector("#hmtWatchesWebsite")
+const homeServicesWebsite = document.querySelector("#homeServicesWebsite")
+
+sonicKeysWebsite.addEventListener("click", () => {
+    window.open("https://sonic-keys.vercel.app/","_blank" )
+});
+foodOnWheelsWebsite.addEventListener("click", () => {
+    window.open("https://foodonwheels-five.vercel.app/","_blank" )
+});
+// hospitalAppointmentSystemWebsite.addEventListener("click", () => {
+//     window.open("https://sonic-keys.vercel.app/","_blank" )
+// });
+geeksForGeeksWebsite.addEventListener("click", () => {
+    window.open("https://geeksforgeeks-omega.vercel.app/","_blank" )
+});
+vedaantaWebsite.addEventListener("click", () => {
+    window.open("https://vedaanta-senior-living.vercel.app/","_blank" )
+});
+hmtWatchesWebsite.addEventListener("click", () => {
+    window.open("https://hmtwatches-bootstrap.vercel.app/","_blank" )
+});
+homeServicesWebsite.addEventListener("click", () => {
+    window.open("https://homeservices-orcin.vercel.app/","_blank" )
+});
