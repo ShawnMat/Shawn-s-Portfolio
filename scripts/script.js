@@ -61,12 +61,12 @@ resumeBtn.addEventListener("click",()=>{
 const sayHiBtn = document.querySelector("#sayHiBtn");
 
 sayHiBtn.addEventListener("click", () => {
-    window.location.href = "mailto:your-email@example.com";
+    window.location.href = "mailto:shawn.daniel1919@gmail.com";
 });
 const getInTouch = document.querySelector(".getInTouchBtn");
 
 getInTouch.addEventListener("click", () => {
-    window.location.href = "mailto:your-email@example.com";
+    window.location.href = "mailto:shawn.daniel1919@gmail.com";
 });
 
 
